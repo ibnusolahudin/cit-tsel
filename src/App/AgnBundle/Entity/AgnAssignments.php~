@@ -1,0 +1,89 @@
+<?php
+
+namespace App\AgnBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AgnAssignments
+ *
+ * @ORM\Table(name="AGN_ASSIGNMENTS")
+ * @ORM\Entity
+ */
+class AgnAssignments
+{
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="ACTIVE_DATE", type="datetime", nullable=true)
+     */
+    private $activeDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ASSIGN_DESCRIPTION", type="string", length=200, nullable=true)
+     */
+    private $assignDescription;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ASSIGN_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="AGN_ASSIGNMENTS_ASSIGN_ID_seq", allocationSize=1, initialValue=1)
+     */
+    private $assignId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ASSIGN_SHORT_NAME", type="string", length=20, nullable=true)
+     */
+    private $assignShortName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CR_BY", type="integer", nullable=true)
+     */
+    private $crBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="CR_DATE", type="datetime", nullable=true)
+     */
+    private $crDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="END_DATE", type="datetime", nullable=true)
+     */
+    private $endDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="LAD_BY", type="integer", nullable=true)
+     */
+    private $ladBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="LAD_DATE", type="datetime", nullable=true)
+     */
+    private $ladDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="MENUSET_ID", type="integer", nullable=true)
+     */
+    private $menusetId;
+
+
+}

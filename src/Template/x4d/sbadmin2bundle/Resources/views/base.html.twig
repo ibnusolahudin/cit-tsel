@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {% block stylesheets %}
+        {% stylesheets
+        '@X4DSBAdmin2Bundle/Resources/public/css/bootstrap.min.css'
+        '@X4DSBAdmin2Bundle/Resources/public/css/plugins/metisMenu/metisMenu.min.css'
+        '@X4DSBAdmin2Bundle/Resources/public/css/sb-admin-2.css'
+        '@X4DSBAdmin2Bundle/Resources/public/css/plugins/datagrid.css'
+        'bundles/x4dsbadmin2/font-awesome/css/font-awesome.min.css'
+        output='css/*.css' filter='cssrewrite' %}
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+<div id="wrapper">
+    {% block body %}{% endblock %}
+</div>
+{% block javascripts %}
+    {% javascripts
+    '@X4DSBAdmin2Bundle/Resources/public/js/jquery.js'
+    '@X4DSBAdmin2Bundle/Resources/public/js/bootstrap.min.js'
+    '@X4DSBAdmin2Bundle/Resources/public/js/plugins/metisMenu/metisMenu.min.js'
+    '@X4DSBAdmin2Bundle/Resources/public/js/sb-admin-2.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+</body>
+</html>

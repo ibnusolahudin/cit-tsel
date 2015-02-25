@@ -1,0 +1,96 @@
+<?php
+
+namespace App\AgnBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AgnUsers
+ *
+ * @ORM\Table(name="AGN_USERS")
+ * @ORM\Entity
+ */
+class AgnUsers 
+{
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="ACTIVE_DATE", type="datetime", nullable=true)
+     */
+    private $activeDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CR_BY", type="integer", nullable=true)
+     */
+    private $crBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="CR_DATE", type="datetime", nullable=true)
+     */
+    private $crDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="EMP_ID", type="integer", nullable=true)
+     */
+    private $empId;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="END_DATE", type="datetime", nullable=true)
+     */
+    private $endDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="LAD_BY", type="integer", nullable=true)
+     */
+    private $ladBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="LAD_DATE", type="datetime", nullable=true)
+     */
+    private $ladDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="PASSWORD", type="string", length=100, nullable=true)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="USER_CODE", type="string", length=30, nullable=true)
+     */
+    private $userCode;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="USER_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="AGN_USERS_USER_ID_seq", allocationSize=1, initialValue=1)
+     */
+    private $userId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="USER_NAME", type="string", length=200, nullable=true)
+     */
+    private $userName;
+
+
+}

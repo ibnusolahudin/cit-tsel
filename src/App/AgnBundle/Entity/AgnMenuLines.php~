@@ -1,0 +1,96 @@
+<?php
+
+namespace App\AgnBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AgnMenuLines
+ *
+ * @ORM\Table(name="AGN_MENU_LINES")
+ * @ORM\Entity
+ */
+class AgnMenuLines
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CHILD_MENU_ID", type="integer", nullable=true)
+     */
+    private $childMenuId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EXEC_DELETE", type="string", length=3, nullable=true)
+     */
+    private $execDelete;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EXEC_INSERT", type="string", length=3, nullable=true)
+     */
+    private $execInsert;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EXEC_PARAMETER", type="string", length=200, nullable=true)
+     */
+    private $execParameter;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EXEC_READ", type="string", length=3, nullable=true)
+     */
+    private $execRead;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EXEC_UPDATE", type="string", length=3, nullable=true)
+     */
+    private $execUpdate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="LINE_NUM", type="integer", nullable=false)
+     */
+    private $lineNum;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="MENUSET_ID", type="integer", nullable=true)
+     */
+    private $menusetId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="MENU_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="AGN_MENU_LINES_MENU_ID_seq", allocationSize=1, initialValue=1)
+     */
+    private $menuId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="PROGRAM_ID", type="integer", nullable=true)
+     */
+    private $programId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="PROMPT", type="string", length=100, nullable=true)
+     */
+    private $prompt;
+
+
+}

@@ -1,0 +1,68 @@
+<?php
+
+namespace App\AgnBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AgnMenusets
+ *
+ * @ORM\Table(name="AGN_MENUSETS")
+ * @ORM\Entity
+ */
+class AgnMenusets
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CR_BY", type="integer", nullable=true)
+     */
+    private $crBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="CR_DATE", type="datetime", nullable=true)
+     */
+    private $crDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="LAD_BY", type="integer", nullable=true)
+     */
+    private $ladBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="LAD_DATE", type="datetime", nullable=false)
+     */
+    private $ladDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="MENUSET_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="AGN_MENUSETS_MENUSET_ID_seq", allocationSize=1, initialValue=1)
+     */
+    private $menusetId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MENUSET_NAME", type="string", length=200, nullable=true)
+     */
+    private $menusetName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MENU_TYPE_CODE", type="string", length=20, nullable=true)
+     */
+    private $menuTypeCode;
+
+
+}

@@ -1,0 +1,9 @@
+{% extends "BCoreAdminBundle::layout.html.twig" %}
+
+{% block nav_left_block %}  
+    {% include 'AppAgnBundle::left_menu.html.twig' %}
+{% endblock %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block header %} Welcome, {{ app.user.username }} {% endblock %}

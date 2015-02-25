@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/test/app/config/config.yml</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Entity/AgnUserRepository.php</file>
+            <file>file:/C:/xampp/htdocs/test/vendor/knplabs/knp-menu/src/Knp/Menu/MenuItem.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Entity/AgnAssignments.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Resources/views/left_menu.html.twig</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Resources/views/Default/test.html.twig</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Resources/views/Menu/knp_menu.html.twig</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Menu/MenuBuilder.php</file>
+            <file>file:/C:/xampp/htdocs/test/app/AppKernel.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Entity/AgnAssignmentRepo.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Entity/AgnMenuLines.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Menu/RequestVoter.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Entity/AgnUsers.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Controller/SecurityController.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/template/bcore/adminbundle/Resources/views/base.html.twig</file>
+            <file>file:/C:/xampp/htdocs/test/app/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/test/src/template/bcore/adminbundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/xampp/htdocs/test/vendor/knplabs/knp-menu/src/Knp/Menu/ItemInterface.php</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/xampp/htdocs/test/app/config/services.yml</file>
+            <file>file:/C:/xampp/htdocs/test/src/App/AgnBundle/Resources/config/routing.yml</file>
+        </group>
+    </open-files>
+</project-private>

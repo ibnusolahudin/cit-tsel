@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>AgnMenusets</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Crby</th>
+                <td>{{ entity.crBy }}</td>
+            </tr>
+            <tr>
+                <th>Crdate</th>
+                <td>{{ entity.crDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Ladby</th>
+                <td>{{ entity.ladBy }}</td>
+            </tr>
+            <tr>
+                <th>Laddate</th>
+                <td>{{ entity.ladDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Menusetid</th>
+                <td>{{ entity.menusetId }}</td>
+            </tr>
+            <tr>
+                <th>Menusetname</th>
+                <td>{{ entity.menusetName }}</td>
+            </tr>
+            <tr>
+                <th>Menutypecode</th>
+                <td>{{ entity.menuTypeCode }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('menusets') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('menusets_edit', { 'id': entity.menusetId }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

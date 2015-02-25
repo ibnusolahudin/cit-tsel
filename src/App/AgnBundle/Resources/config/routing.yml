@@ -1,0 +1,11 @@
+_agn_homepage:
+    path:     /apps/dashboard
+    defaults: { _controller: AppAgnBundle:Default:index }
+    
+_agn_test:
+    path:     /apps/test
+    defaults: { _controller: AppAgnBundle:Default:test }    
+
+_agn_auth:
+    resource: "@AppAgnBundle/Controller/SecurityController.php"
+    type:     annotation

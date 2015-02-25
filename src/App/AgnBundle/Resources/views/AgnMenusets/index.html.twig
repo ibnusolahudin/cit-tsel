@@ -1,0 +1,51 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>AgnMenusets list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Crby</th>
+                <th>Crdate</th>
+                <th>Ladby</th>
+                <th>Laddate</th>
+                <th>Menusetid</th>
+                <th>Menusetname</th>
+                <th>Menutypecode</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('menusets_show', { 'id': entity.menusetId }) }}">{{ entity.crBy }}</a></td>
+                <td>{% if entity.crDate %}{{ entity.crDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.ladBy }}</td>
+                <td>{% if entity.ladDate %}{{ entity.ladDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.menusetId }}</td>
+                <td>{{ entity.menusetName }}</td>
+                <td>{{ entity.menuTypeCode }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('menusets_show', { 'id': entity.menusetId }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('menusets_edit', { 'id': entity.menusetId }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('menusets_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}
